@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <h1>TODOLIST</h1>
+        <div id="toDoListDisplay">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Target Date</th>
+                </tr>
+            </thead>
+            <tbody>
+<!--                <tr>-->
+<!--                    <td>Run errands</td>-->
+<!--                    <td>To buy Kueh Lapis for Jean</td>-->
+<!--                    <td>05/06/2021</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>JFSD Project Task</td>-->
+<!--                    <td>-->
+<!--                        Complete frontend and backend structure for JFSD course-->
+<!--                    </td>-->
+<!--                    <td>28/05/2021</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>JFSD Portfolio</td>-->
+<!--                    <td>To complete my portfolio and update to Github</td>-->
+<!--                    <td>30/05/2021</td>-->
+<!--                </tr>-->
+            </tbody>
+        </table>
+        </div>
+
+        <a th:href="@{form}" class="btn btn-primary" role="button">Go to form</a>
+    </body>
+</html>
