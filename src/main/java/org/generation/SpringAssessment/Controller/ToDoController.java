@@ -25,7 +25,7 @@ public class ToDoController {
     }
 
     @CrossOrigin
-    @GetMapping( "/add" )
+    @PostMapping( "/add" )
     public void save(@RequestParam(name="title", required = true) String title, @RequestParam(name="description", required = true) String description, @RequestParam(name="toDoDate", required = true) LocalDate toDoDate) {
         ToDoDto toDoDto = new ToDoDto(title, description, toDoDate);
         toDoService.save(new ToDo(toDoDto));
