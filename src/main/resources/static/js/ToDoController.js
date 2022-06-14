@@ -27,6 +27,9 @@ class ToDoController {
     }
 
     displayToDo() {
+
+         let toDoController = this;
+         toDoController.toDo = [];
         fetch("http://localhost:8080/todolist/all")
             .then((res) => res.json())
             .then(function (data) {
@@ -38,9 +41,10 @@ class ToDoController {
                         description: toDo.description,
                         toDoDate: toDo.toDoDate,
                     };
-                    this.toDo.push(toDoObj);
+                    toDoController.toDo.push(toDoObj);
                 });
-                this.renderToDoPage();
+                console.log("Hello");
+                toDoController.renderToDoPage();
             })
             .catch(function (error) {
                 console.log(error);

@@ -3,9 +3,9 @@ const toDoControl = new ToDoController();
 newToDoForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const title = document.querySelector("#newToDoTitle").value;
-    const description = document.querySelector("#newToDoDescription").value;
-    const toDoDate = document.querySelector("#newToDoDate").value;
+    let title = document.querySelector("#newToDoTitle").value;
+    let description = document.querySelector("#newToDoDescription").value;
+    let toDoDate = document.querySelector("#newToDoDate").value;
 
     title = "";
     description = "";
