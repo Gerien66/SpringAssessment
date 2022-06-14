@@ -7,7 +7,7 @@ class ToDoController {
         let toDoController = this;
         const formData = new FormData();
         formData.append("title", title);
-        formData.append("descriptiono", description);
+        formData.append("description", description);
         formData.append("toDoDate", toDoDate);
 
         fetch("http://localhost:8080/todolist/add", {
