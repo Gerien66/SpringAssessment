@@ -12,12 +12,14 @@ class ToDoController {
 
         fetch("http://localhost:8080/todolist/add", {
             method: "POST",
-            body: formData,
+            body: formData
         })
             .then(function (response) {
                 console.log(response.status);
                 if (response.ok) {
                     alert("Successfully added ToDo!");
+                } else {
+                console.log("WHY IS IT NOT WORKING?!?!?!?!?!?!?!?!");
                 }
             })
             .catch((err) => {

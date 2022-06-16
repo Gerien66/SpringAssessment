@@ -7,9 +7,11 @@ newToDoForm.addEventListener("submit", (event) => {
     let description = document.querySelector("#newToDoDescription").value;
     let toDoDate = document.querySelector("#newToDoDate").value;
 
-    title = "";
-    description = "";
-    toDoDate = "";
+
 
     toDoControl.addToDo(title, description, toDoDate);
+
+    document.querySelector("#newToDoTitle").value = "";
+    document.querySelector("#newToDoDescription").value = "";
+    document.querySelector("#newToDoDate").value = "";
 });
